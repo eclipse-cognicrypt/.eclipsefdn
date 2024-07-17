@@ -29,15 +29,6 @@ orgs.newOrg('eclipse-cognicrypt') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://592827ff79553f0700b4c956:2L6YNtWDWw6oKlkY@api.shippable.com/projects/592827ff79553f0700b4c956/newBuild') {
-          events+: [
-            "pull_request",
-            "push",
-            "release"
-          ],
-        },
-      ],
     },
     orgs.newRepo('Governance') {
       allow_merge_commit: true,
