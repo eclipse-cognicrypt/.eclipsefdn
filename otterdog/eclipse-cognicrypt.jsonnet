@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-cognicrypt') {
+orgs.newOrg('technology.cognicrypt', 'eclipse-cognicrypt') {
   settings+: {
     description: "",
     name: " Eclipse CogniCrypt",
